@@ -1,0 +1,14 @@
+ipython
+numpy
+pandas
+matplotlib
+scikit-learn
+seaborn
+google-cloud-storage
+pyyaml
+imbalanced-learn
+mlflow
+dvc
+flask
+
+#-e .
