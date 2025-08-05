@@ -39,21 +39,6 @@ class DataIngestion:
             logger.error("Error while downloading csv file")
             raise CustomException("failed to download csv file", sys)
         
-    def download_csv_from_local_file_path(self):
-        try:
-            ##reading the dataset
-            data= pd.read_csv(DATA_FILE_PATH)
-
-            ##saving the dataset to Data file path
-            data.to_csv(RAW_FILE_PATH)
-
-            logger.info(f'Data successfully downloaded to {RAW_FILE_PATH}')
-        
-        except Exception as e:
-            logger.error("Error while downloading csv dataset")
-            raise CustomException("failed to download csv dataset", sys)
-
-        
     def split_data(self):
         try:
             logger.info("starting the splitting process")
